@@ -1,6 +1,6 @@
 // 首页：在大标题下方插入「头像 + 简介」卡片
-var AVATAR = '/images/avatar.svg';
-var TAGLINE = '记录 · 思考 · 分享';
+var AVATAR = '/images/avatar.jpg';
+var TAGLINE = '修仙中。';
 
 (function () {
   function build() {

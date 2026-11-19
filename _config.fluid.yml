@@ -66,7 +66,7 @@ about:
   banner_img: /img/default.png
   banner_img_height: 50
   banner_mask_alpha: 0.4
-  avatar: /images/avatar.svg
+  avatar: '/images/avatar.jpg'
   name: "06Hazel"
   intro: "一个用 Hexo + Fluid 搭建的静态博客，托管在 GitHub Pages。"
   icons:
