@@ -1,0 +1,110 @@
+# ===============================================================
+# NexT 主题个性化配置（Alternate Theme Config）
+# 只写需要覆盖的项，未写的沿用主题默认值
+# 文档：https://theme-next.js.org/docs/
+# ===============================================================
+
+# 主题风格：Muse / Mist / Pisces / Gemini
+scheme: Gemini
+# 是否默认夜间模式
+darkmode: false
+
+# 顶部菜单
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  about: /about/ || fa fa-user
+
+# 侧边栏：left / right，display: always / hide / post
+sidebar:
+  position: left
+  display: always
+  width: 240
+
+# 头像
+avatar:
+  url: /images/avatar.svg
+  rounded: true
+  rotated: false
+
+# 社交链接
+social:
+  GitHub: https://github.com/06Hazel || fab fa-github
+  邮件: mailto:06Hazel@users.noreply.github.com || fa fa-envelope
+
+# 文章目录
+toc:
+  enable: true
+  number: true
+  wrap: true
+  expand_all: false
+  max_depth: 3
+
+# 文章信息栏
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+
+# 回到顶部
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# 阅读进度条
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+
+# 代码块
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  copy_button:
+    enable: true
+    show_result: true
+    style: mac
+
+# 本地搜索（依赖 hexo-generator-searchdb）
+local_search:
+  enable: true
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# 页面动效
+motion:
+  enable: true
+  async: false
+  transition:
+    menu_item: fadeInDown
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeIn
+    coll_header: fadeInLeft
+    sidebar: fadeInUp
+
+# 页脚
+footer:
+  since: 2026
+  icon:
+    name: fa fa-heart
+    animated: false
+    color: "#ff6b6b"
+  copyright:
+  powered: true
+
+# 文章底部版权声明
+creative_commons:
+  license: by-nc-sa
+  sidebar: false
+  post: true
+  language: zh-CN

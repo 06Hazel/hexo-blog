@@ -1,0 +1,44 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Build & Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate static files
+        run: npx hexo generate
+
+      # 关键一步：
+      # deploy_key  -> 源码仓库 Secrets 里的私钥（HEXO_DEPLOY_KEY）
+      # external_repository -> 目标 Pages 仓库（用户名/用户名.github.io）
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.HEXO_DEPLOY_KEY }}
+          external_repository: 06Hazel/06Hazel.github.io
+          publish_branch: main
+          publish_dir: ./public
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: ${{ github.event.head_commit.message }}
