@@ -108,3 +108,10 @@ creative_commons:
   sidebar: false
   post: true
   language: zh-CN
+
+# 数学公式：只有文章开头写了 mathjax: true 才会加载，不影响其他页面
+math:
+  every_page: false
+  mathjax:
+    enable: true
+    tags: ams
