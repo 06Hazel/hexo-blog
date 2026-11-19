@@ -13,6 +13,9 @@ jobs:
   deploy:
     name: Build & Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    env:
+      # 固定东八区，否则深夜发布的文章会按 UTC 算成前一天
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
