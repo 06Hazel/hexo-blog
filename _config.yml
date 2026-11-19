@@ -5,7 +5,7 @@
 # Site
 title: 莹莹垂看假梦真
 subtitle: '记录 · 思考 · 分享'
-description: '一个用 Hexo + NexT 搭建的静态博客，托管在 GitHub Pages。'
+description: '用 Hexo 搭建的个人博客，记录一些想法。'
 keywords: 博客, Hexo, NexT, 笔记
 author: 06Hazel
 language: zh-CN
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -104,9 +104,9 @@ theme: next
 deploy:
   type: ''
 
-# Local Search (hexo-generator-searchdb)
+# Local Search (hexo-generator-search)
 search:
-  path: search.xml
+  path: local-search.xml
   field: post
   content: true
   format: html

@@ -1,0 +1,49 @@
+/* 首页头像卡片（半透明背景，深浅色模式都能用） */
+.profile-hero {
+  position: relative;
+  z-index: 3;
+  max-width: 760px;
+  margin: -96px auto 40px;
+  padding: 26px 28px 24px;
+  text-align: center;
+  border-radius: 14px;
+  background: rgba(127, 127, 127, 0.16);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.profile-hero img {
+  display: block;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(127, 127, 127, 0.35);
+}
+
+.profile-hero .tagline {
+  margin: 16px auto 0;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+.profile-hero .bio {
+  margin: 8px auto 0;
+  max-width: 560px;
+  font-size: 13px;
+  line-height: 1.85;
+  opacity: 0.62;
+}
+
+@media (max-width: 767px) {
+  .profile-hero {
+    margin: -72px 16px 24px;
+    padding: 20px 18px;
+  }
+  .profile-hero img {
+    width: 76px;
+    height: 76px;
+  }
+}
