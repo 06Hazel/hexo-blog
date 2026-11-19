@@ -13,26 +13,24 @@ darkmode: false
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
   about: /about/ || fa fa-user
 
 # 侧边栏：left / right，display: always / hide / post
 sidebar:
   position: left
   display: always
-  width: 240
+  width_dual_column: 240
 
 # 头像
 avatar:
-  url: /images/avatar.svg
+  url: '/images/avatar.svg'
   rounded: true
   rotated: false
 
-# 社交链接
-social:
-  GitHub: https://github.com/06Hazel || fab fa-github
-  邮件: mailto:06Hazel@users.noreply.github.com || fa fa-envelope
+# 站点概览里的数字统计（日志 / 分类 / 标签），关掉更干净
+site_state: false
+
+# 社交链接（想去掉图标就删掉下面几行，NexT 会自动隐藏这块）
 
 # 文章目录
 toc:
