@@ -73,10 +73,10 @@ git add . && git commit -m "post: 文章标题" && git push
 - 私钥 → 仓库 1 的 `Settings → Secrets and variables → Actions`，名称 `HEXO_DEPLOY_KEY`
 - 公钥 → 仓库 2 的 `Settings → Deploy keys`，勾选 **Allow write access**
 
-生成密钥对：
+生成密钥对（ed25519 只有 93 个字符，粘贴到网页上比 RSA 4096 稳得多）：
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "hexo deploy" -f hexo-deploy-key -N ""
+ssh-keygen -t ed25519 -C "hexo-deploy" -f deploy-ed25519 -N ""
 ```
 
 仓库 2 还需要在 `Settings → Pages` 里把 Source 设为 `Deploy from a branch` → `main` → `/ (root)`。
