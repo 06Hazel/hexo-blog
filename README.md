@@ -1,12 +1,12 @@
 # 莹莹垂看假梦真
 
-一个用 [Hexo](https://hexo.io/zh-cn/) + [NexT](https://theme-next.js.org/) 搭建的静态博客，
+一个用 [Hexo](https://hexo.io/zh-cn/) + [Fluid](https://hexo.fluid-dev.com/) 搭建的静态博客，
 通过 GitHub Actions 自动构建并部署到 GitHub Pages，不需要服务器。
 
 ## 效果
 
 - 站点：<https://06Hazel.github.io>
-- 主题：NexT（Gemini 方案），浅色、本地搜索、代码高亮 + 复制按钮、文章目录
+- 主题：Fluid，暗色、首页头像简介、顶部搜索、封面图、代码高亮
 - 部署：push 到 `main` 分支即自动发布，约 30 秒后生效
 
 ## 目录结构
@@ -14,7 +14,7 @@
 ```
 .
 ├── _config.yml              # 站点主配置（标题、作者、url、主题）
-├── _config.next.yml         # NexT 主题个性化配置
+├── _config.fluid.yml        # Fluid 主题配置（暗色、菜单、横幅）
 ├── package.json             # 依赖与脚本
 ├── source/
 │   ├── _posts/              # 文章（Markdown）
