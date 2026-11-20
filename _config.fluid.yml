@@ -45,6 +45,10 @@ post:
   banner_img: /img/default.png
   banner_img_height: 60
   banner_mask_alpha: 0.4
+  # 打开留言区，用 Waline
+  comments:
+    enable: true
+    type: waline
   meta:
     date:
       enable: true
@@ -82,7 +86,7 @@ custom_js:
 # 留言区（Waline）
 # 部署好 Waline 服务端后，把 serverURL 改成你的地址，留言框就会出现在每篇文章底部
 waline:
-  serverURL: ''
+  serverURL: 'https://liuyan-06hazel.vercel.app'
   path: window.location.pathname
   # 只要求填昵称，邮箱和网址都是选填 —— 这就是「可以匿名，也可以公开身份」
   meta: ['nick', 'mail', 'link']
