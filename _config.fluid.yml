@@ -78,3 +78,16 @@ custom_css:
 
 custom_js:
   - /js/custom.js
+
+# 留言区（Waline）
+# 部署好 Waline 服务端后，把 serverURL 改成你的地址，留言框就会出现在每篇文章底部
+waline:
+  serverURL: ''
+  path: window.location.pathname
+  # 只要求填昵称，邮箱和网址都是选填 —— 这就是「可以匿名，也可以公开身份」
+  meta: ['nick', 'mail', 'link']
+  requiredMeta: ['nick']
+  lang: 'zh-CN'
+  emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
+  dark: 'html[data-user-color-scheme="dark"]'
+  pageSize: 10
