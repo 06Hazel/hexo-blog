@@ -36,6 +36,16 @@ var TAGLINE = '灯千影';
       box.appendChild(p);
     }
 
+    var links = document.createElement('p');
+    links.className = 'links';
+    var gh = document.createElement('a');
+    gh.href = 'https://github.com/06Hazel';
+    gh.target = '_blank';
+    gh.rel = 'noopener';
+    gh.textContent = 'GitHub';
+    links.appendChild(gh);
+    box.appendChild(links);
+
     var board = document.querySelector('#board');
     var container = board ? board.querySelector('.container') : null;
     if (container) {

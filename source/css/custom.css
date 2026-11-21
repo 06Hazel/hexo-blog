@@ -37,6 +37,25 @@
   opacity: 0.62;
 }
 
+.profile-hero .links {
+  margin: 14px auto 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  opacity: 0.55;
+}
+
+.profile-hero .links a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.45);
+  padding-bottom: 1px;
+}
+
+.profile-hero .links a:hover {
+  opacity: 1;
+  border-bottom-color: currentColor;
+}
+
 @media (max-width: 767px) {
   .profile-hero {
     margin: -72px 16px 24px;
